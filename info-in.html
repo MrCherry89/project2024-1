@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/language/language.js"></script>
+  </head>
+
+  <body>
+    <main class="white-bg">
+      <header class="mobile-header">
+        <a href="info.html" class="back tr" data-key="back"></a>
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="lang">
+          <button type="button" class="change-language" data-lang="kz">
+            Қаз
+          </button>
+          <button type="button" class="change-language" data-lang="ru">
+            Рус
+          </button>
+        </div>
+      </header>
+      <div class="rate">
+        <p class="tr" data-key="rate-quality"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol id="starIcon" viewBox="0 0 24 24">
+            <polygon
+              points="12,0 15.708,7.514 24,8.718 18,14.566 19.416,22.825 12,18.926 4.583,22.825 6,14.566 0,8.718 8.292,7.514"
+            />
+          </symbol>
+        </svg>
+        <div class="container">
+          <div class="row">
+            <fieldset class="rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="Rocks!">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="Pretty good">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="Meh">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="Kinda bad">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="Sucks big time">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <form class="rate-form">
+          <textarea required placeholder="Оставить комментарий"></textarea>
+          <button
+            type="submit"
+            class="green-btn bdrs tr"
+            data-key="send"
+          ></button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

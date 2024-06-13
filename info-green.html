@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/language/language.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header class="mobile-header">
+        <div class="back op"></div>
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="lang">
+          <button type="button" class="change-language" data-lang="kz">
+            Қаз
+          </button>
+          <button type="button" class="change-language" data-lang="ru">
+            Рус
+          </button>
+        </div>
+      </header>
+      <div class="your-call">
+        <h2 class="main-title tr" data-key="dont-close"></h2>
+        <p class="tr" data-key="your-call"></p>
+        <div class="info info-green">
+          <img src="img/green-style.svg" alt="" />
+          <span class="num">746</span>
+          <span class="green tr" data-key="your-number2"></span>
+          <div class="wrap">
+            <img src="img/people-icon.svg" alt="" />
+            <img src="img/arrow-white.svg" alt="" />
+            <b>Окно №11</b>
+          </div>
+          <div class="bottom">
+            <span class="date">28.02.2024</span>
+            <span class="time">17:45</span>
+          </div>
+        </div>
+        <a href="info-in.html" class="give-up-btn tr" data-key="skip"></a>
+        <div class="coupon"></div>
+      </div>
+      <div class="rate rate2">
+        <div class="coupon-top">
+          <b>Талон №</b>
+          <b class="tr" data-key="window"></b>
+        </div>
+        <div class="coupon-item active">
+          <span>746</span>
+          <svg
+            width="24"
+            height="9"
+            viewBox="0 0 24 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.3536 4.91019C23.5488 4.71493 23.5488 4.39835 23.3536 4.20309L20.1716 1.02111C19.9763 0.825845 19.6597 0.825845 19.4645 1.02111C19.2692 1.21637 19.2692 1.53295 19.4645 1.72821L22.2929 4.55664L19.4645 7.38507C19.2692 7.58033 19.2692 7.89691 19.4645 8.09217C19.6597 8.28744 19.9763 8.28744 20.1716 8.09217L23.3536 4.91019ZM0 5.05664H23V4.05664H0V5.05664Z"
+            />
+          </svg>
+          <span>11</span>
+        </div>
+        <p class="tr" data-key="rate-quality"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol id="starIcon" viewBox="0 0 24 24">
+            <polygon
+              points="12,0 15.708,7.514 24,8.718 18,14.566 19.416,22.825 12,18.926 4.583,22.825 6,14.566 0,8.718 8.292,7.514"
+            />
+          </symbol>
+        </svg>
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="Rocks!">
+            <svg class="icon icon-star">
+              <use xlink:href="#starIcon" />
+            </svg>
+          </label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="Pretty good">
+            <svg class="icon icon-star">
+              <use xlink:href="#starIcon" />
+            </svg>
+          </label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="Meh">
+            <svg class="icon icon-star">
+              <use xlink:href="#starIcon" />
+            </svg>
+          </label>
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="Kinda bad">
+            <svg class="icon icon-star">
+              <use xlink:href="#starIcon" />
+            </svg>
+          </label>
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="Sucks big time">
+            <svg class="icon icon-star">
+              <use xlink:href="#starIcon" />
+            </svg>
+          </label>
+        </fieldset>
+        <form class="rate-form">
+          <textarea required placeholder="Оставить комментарий"></textarea>
+          <button
+            type="submit"
+            class="green-btn bdrs tr"
+            data-key="send"
+          ></button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

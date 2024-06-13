@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/language/language.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header class="mobile-header">
+        <a href="index.html" class="back tr" data-key="back"></a>
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="lang">
+          <button type="button" class="change-language" data-lang="kz">
+            Қаз
+          </button>
+          <button type="button" class="change-language" data-lang="ru">
+            Рус
+          </button>
+        </div>
+      </header>
+      <div class="continue">
+        <h2 class="main-title tr" data-key="morning"></h2>
+        <p class="tr" data-key="phone"></p>
+        <form class="continue-form">
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            required
+            class="phone-number-input input"
+            placeholder="+7 (___) ___ __ __"
+          />
+          <button
+            type="submit"
+            class="green-btn tr"
+            data-key="continue"
+          ></button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
